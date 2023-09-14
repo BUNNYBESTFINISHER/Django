@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book_adding</title>
+</head>
+<body>
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <input type="text" name="name" id="name" placeholder="Enter the Book name">
+        <input type="text" name="desc" id="desc" placeholder="Enter the Book Description">
+        <input type="text" name="price" id="price" placeholder="Enter the Book price">
+        <input type="file" name="book_image" id="book_image">
+        <input type="submit" value="submit">
+    </form>
+</body>
+</html>
